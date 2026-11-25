@@ -38,3 +38,18 @@ body.callout #veil{background:linear-gradient(90deg,transparent 60%,rgba(17,19,1
 #story,#feature-visual,#callout-lines{transition:opacity 260ms ease;animation:none}
 #story.changing,#feature-visual.changing,#callout-lines.changing{opacity:0;pointer-events:none;translate:none}
 body.exploring #world{transition:none}
+
+#about-panel {
+  width: min(32rem, calc(100% - 2rem));
+  padding: clamp(1.25rem, 5vw, 2rem);
+  background: var(--paper);
+  color: var(--bg);
+  border: 0;
+  box-shadow: 0 18px 60px #0006;
+}
+#about-panel::backdrop { background: #111311c9; }
+#about-panel form { display: flex; justify-content: flex-end; }
+#about-panel button { font-size: 1.5rem; }
+#about-panel h2 { margin: 0 0 1rem; font: 2rem Georgia, serif; }
+#about-panel h3 { margin: 1.5rem 0 .375rem; font-size: 1rem; }
+#about-panel p { margin: 0; font-size: 1rem; line-height: 1.55; }

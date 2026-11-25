@@ -79,7 +79,9 @@ $('next').onclick=()=>go(current+1);$('prev').onclick=()=>go(current-1);$('begin
 $('explore').onclick=explore;$('resume').onclick=explore;$('note-toggle').onclick=()=>{$('notes').hidden=!$('notes').hidden};$('close-notes').onclick=()=>{$('notes').hidden=true};
 $('full').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen()}catch(e){$('full').title='Use your browser’s fullscreen menu'}};
 document.querySelector('.brand').onclick=e=>{e.preventDefault();go(0)};
-document.addEventListener('keydown',e=>{if(e.altKey||e.metaKey||e.ctrlKey||['INPUT','TEXTAREA'].includes(e.target.tagName))return;
+const aboutPanel = $('about-panel');
+$('about').onclick = () => aboutPanel.showModal();
+document.addEventListener('keydown',e=>{if(aboutPanel.open||e.altKey||e.metaKey||e.ctrlKey||['INPUT','TEXTAREA'].includes(e.target.tagName))return;
  if(e.key==='Escape'){$('index-panel').hidden=true;$('notes').hidden=true;$('sources-panel').hidden=true;if(exploring)explore();return}
  if(!$('index-panel').hidden||!$('sources-panel').hidden)return;
  if((e.key===' '&&e.target.tagName!=='BUTTON')||e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();go(current+1)}

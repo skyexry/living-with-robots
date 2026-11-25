@@ -1,9 +1,16 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111311"><title>Living with Robots — A Magazine in Motion</title><link rel="stylesheet" href="style.css?v=editorial-12"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111311"><title>Living with Robots — A Magazine in Motion</title><link rel="stylesheet" href="style.css?v=about-1"></head>
 <body>
 <div class="grain" aria-hidden="true"></div>
-<header><a class="brand" href="#0" aria-label="Return to opening"><span class="brand-mark">ET<span>&amp;</span>CA</span><span>LIVING WITH ROBOTS<small>ET&amp;CA / EDITORIAL TOUR</small></span></a><div class="header-actions"><button id="overview" title="Chapter overview (O)">Chapter index <span>↗</span></button><button id="full" title="Fullscreen (F)" aria-label="Toggle fullscreen">⛶</button></div></header>
+<header><a class="brand" href="#0" aria-label="Return to opening"><span class="brand-mark">ET<span>&amp;</span>CA</span><span>LIVING WITH ROBOTS<small>ET&amp;CA / EDITORIAL TOUR</small></span></a><div class="header-actions"><button id="about" type="button" aria-haspopup="dialog">About</button><button id="overview" title="Chapter overview (O)">Chapter index <span>↗</span></button><button id="full" title="Fullscreen (F)" aria-label="Toggle fullscreen">⛶</button></div></header>
+<dialog id="about-panel" aria-labelledby="about-title">
+  <form method="dialog"><button type="submit" aria-label="Close About" autofocus>×</button></form>
+  <h2 id="about-title">About Living with Robots</h2>
+  <p>Living with Robots is a group project for Assignment 1 in Emerging Technologies &amp; Computational Arts. The interactive magazine explores how robots shape what people can do, who gets to participate, and who has authority.</p>
+  <h3>Project team</h3>
+  <p>Skye Xi, Sienna Ni, and Wenhao Su.</p>
+</dialog>
 <main id="viewport" aria-label="Interactive magazine canvas"><div id="world"></div></main>
 <svg id="callout-lines" aria-hidden="true"></svg><div id="feature-visual" hidden></div><div id="hotspot-tip" hidden></div><div id="veil" aria-hidden="true"></div>
 <section id="story" aria-live="polite"><div id="chapter-marker" hidden></div><div id="eyebrow"></div><h1 id="title"></h1><p id="intro" hidden></p><span id="excerpt-label" hidden>FROM THE CHAPTER</span><p id="body"></p><div id="tags"></div><div id="take"></div><div id="authors">Skye Xi <i>·</i> Sienna Ni <i>·</i> Wenhao Su</div><div id="actions"><button id="begin" class="primary">Enter the chapter <span>↗</span></button><a href="Living-with-Robots.pdf?v=editorial-12" target="_blank" rel="noopener" class="pdf">Read the magazine ↗</a></div><a id="reference" href="Living-with-Robots.pdf?v=editorial-12" target="_blank" rel="noopener"></a></section>
@@ -12,5 +19,5 @@
 <div id="explore-hint" hidden>Drag to move · Scroll to zoom · Double-click to reset <button id="resume">Resume tour →</button></div>
 <div id="index-panel" hidden><div class="index-heading"><div><span class="kicker">THE COMPLETE CHAPTER</span><h2>Choose a spread.</h2></div><button id="close-index" aria-label="Close chapter index">×</button></div><div id="index-grid"></div><a class="index-pdf" href="Living-with-Robots.pdf?v=editorial-12" target="_blank" rel="noopener">Read the full PDF, including references & image credits ↗</a></div>
 <footer><div class="footer-left"><span class="live-dot"></span><span id="section"></span><button id="note-toggle" title="Presenter cues (N)" aria-label="Toggle presenter cues">Notes</button></div><div id="progress" aria-label="Tour stops"></div><div class="transport"><span id="count"></span><button id="prev" aria-label="Previous stop">←</button><button id="next" aria-label="Next stop">→</button></div></footer>
-<section id="sources-panel" role="dialog" aria-modal="true" aria-label="Chapter sources" hidden><div class="sources-top"><span class="kicker">FROM THE CHAPTER</span><button id="close-sources" aria-label="Close sources">×</button></div><h2>Follow the source.</h2><div id="source-list"></div><a class="index-pdf" href="Living-with-Robots.pdf?v=editorial-12#page=10" target="_blank" rel="noopener">Full bibliography, image & quotation credits ↗</a></section><script src="sources.js?v=editorial-12"></script><script src="scenes.js?v=editorial-12"></script><script src="app.js?v=editorial-12"></script>
+<section id="sources-panel" role="dialog" aria-modal="true" aria-label="Chapter sources" hidden><div class="sources-top"><span class="kicker">FROM THE CHAPTER</span><button id="close-sources" aria-label="Close sources">×</button></div><h2>Follow the source.</h2><div id="source-list"></div><a class="index-pdf" href="Living-with-Robots.pdf?v=editorial-12#page=10" target="_blank" rel="noopener">Full bibliography, image & quotation credits ↗</a></section><script src="sources.js?v=editorial-12"></script><script src="scenes.js?v=editorial-12"></script><script src="app.js?v=about-1"></script>
 </body></html>
